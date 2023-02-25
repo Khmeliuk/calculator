@@ -49,6 +49,7 @@ export default class Calculator extends Component {
               placeholder="A імп/кВт*год"
               type="number"
               name="A"
+              inputmode="numeric"
               required
             />
           </label>
@@ -60,6 +61,7 @@ export default class Calculator extends Component {
               type="number"
               name="P"
               required
+              inputmode="numeric"
               step="0.01"
             />
           </label>
@@ -77,6 +79,7 @@ export default class Calculator extends Component {
               type="number"
               name="TF"
               required
+              inputmode="numeric"
               step="0.01"
             />
           </label>
@@ -86,6 +89,7 @@ export default class Calculator extends Component {
               type="number"
               name="transformationCoefficient"
               required
+              inputmode="numeric"
               defaultValue={this.state.transformationCoefficient}
             />
           </label>
@@ -96,6 +100,7 @@ export default class Calculator extends Component {
               placeholder="склас точності"
               type="number"
               name="precision"
+              inputmode="numeric"
               defaultValue={this.state.precision}
             />
           </label>
