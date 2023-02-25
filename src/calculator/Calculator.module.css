@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  margin: 15px 15px;
+
+  border: thick double #32a1ce;
+  border-radius: 10px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 5vmax;
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+  border: solid 2px green;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+input:focus {
+  border: blue;
+}
+
+.control {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.control > button {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: azure;
+  height: 10vmax;
+}
+
+.calculate {
+  background: green;
+}
+
+.reset {
+  background: red;
+}
