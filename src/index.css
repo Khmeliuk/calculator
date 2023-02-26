@@ -11,10 +11,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: beige;
   background-image: url("https://starkon.gov.ua/images/f_khmeln.png");
   background-repeat: no-repeat;
   background-size: contain;
   animation: background-animation 3s linear;
+  background-position-y: 20%;
+  height: 100vh;
 }
 
 code {
@@ -33,6 +36,6 @@ code {
     background-position: 50% 50%;
   }
   100% {
-    background-position: 0 0;
+    background-position: 0 20%;
   }
 }

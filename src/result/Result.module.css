@@ -2,20 +2,39 @@
   text-align: center;
   font-size: 4vmax;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: chartreuse;
+  color: #212121;
+  background-color: rgb(245, 244, 250, 0.7);
+  border: thick double #32a1ce;
+  border-radius: 10px;
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 20%;
 }
-
+.result span {
+  color: #0060df;
+}
 .noResult {
   text-align: center;
   font-size: 4vmax;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: coral;
+  color: #212121;
+  background-color: rgb(245, 244, 250, 0.7);
+  border: thick double #32a1ce;
+  border-radius: 10px;
+  display: block;
+  width: 90%;
+  margin: 20px auto;
 }
 
 .tP {
-  text-align: right;
+  text-align: center;
   font-size: 3vmax;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: darkgreen;
-  margin-right: 10px;
+  color: #212121;
+  background-color: rgb(245, 244, 250, 0.7);
+  border: thick double #32a1ce;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
 }

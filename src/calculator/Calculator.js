@@ -1,11 +1,10 @@
-import { Component, useState } from "react";
+import { Component } from "react";
 import Result from "../result/Result";
 import s from "./Calculator.module.css";
 
 export default class Calculator extends Component {
   state = {
     errorCalculation: 0,
-    precision: 1,
     transformationCoefficient: 1,
     tP: 0,
   };
@@ -20,7 +19,6 @@ export default class Calculator extends Component {
     const connectedPower = evt.currentTarget.P.value;
     const numberOfMeasuredPulses = evt.currentTarget.N.value;
     const measureTime = evt.currentTarget.TF.value;
-    const precision = evt.currentTarget.precision.value;
     const transformationCoefficient =
       evt.currentTarget.transformationCoefficient.value;
     const tP = (
@@ -32,7 +30,6 @@ export default class Calculator extends Component {
 
     this.setState((state) => ({
       errorCalculation: errorCalculation,
-      precision,
       tP,
     }));
     console.log(tP, errorCalculation);
@@ -49,7 +46,6 @@ export default class Calculator extends Component {
               placeholder="A імп/кВт*год"
               type="number"
               name="A"
-              inputmode="numeric"
               required
             />
           </label>
@@ -61,7 +57,6 @@ export default class Calculator extends Component {
               type="number"
               name="P"
               required
-              inputmode="numeric"
               step="0.01"
             />
           </label>
@@ -79,7 +74,6 @@ export default class Calculator extends Component {
               type="number"
               name="TF"
               required
-              inputmode="numeric"
               step="0.01"
             />
           </label>
@@ -89,24 +83,11 @@ export default class Calculator extends Component {
               type="number"
               name="transformationCoefficient"
               required
-              inputmode="numeric"
               defaultValue={this.state.transformationCoefficient}
-            />
-          </label>
-          <label>
-            {" "}
-            Клас точності
-            <input
-              placeholder="склас точності"
-              type="number"
-              name="precision"
-              inputmode="numeric"
-              defaultValue={this.state.precision}
             />
           </label>
 
           <div className={s.control}>
-            {" "}
             <button className={s.calculate} type="submit">
               Обчислити
             </button>
