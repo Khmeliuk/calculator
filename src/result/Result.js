@@ -5,13 +5,13 @@ export default function Result(props) {
     <>
       {" "}
       <p className={s.result}>
-        Розрахунковий час <span className={s.tPSpan}>{props.tP} сек.</span>
+        Розрахунковий час: <span className={s.tPSpan}>{props.tP} сек.</span>
         <br />
-        Похибка ЗКО -<span className={s.resultSpan}> {props.result}%</span>
+        Похибка ЗКО: <span className={s.resultSpan}> {props.result}%</span>
       </p>
-      <p className={s.tP}>
+      {/* <p className={s.tP}>
         {props.result < 0 ? `ЗКО перераховує` : `ЗКО недораховує`}.
-      </p>
+      </p> */}
     </>
   ) : (
     <p className={s.noResult}>Введіть дані для обчислення</p>
