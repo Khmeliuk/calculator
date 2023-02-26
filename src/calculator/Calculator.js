@@ -12,9 +12,10 @@ export default class Calculator extends Component {
     tP: 0,
   };
 
-  reset(evt) {
+  reset = (evt) => {
+    this.setState({ errorCalculation: 0, tP: 0 });
     evt.currentTarget.closest("form").reset();
-  }
+  };
 
   handleSubmit = (evt) => {
     evt.preventDefault();
