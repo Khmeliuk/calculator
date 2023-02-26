@@ -4,7 +4,7 @@
   gap: 5px;
   padding: 20px;
   margin: 15px 15px;
-  margin-top: 10vmin;
+  margin-top: 12vmin;
 
   border: thick double orange;
   border-radius: 10px;
@@ -55,17 +55,49 @@ input:focus::placeholder {
   margin: 0;
   border: none;
   color: azure;
-  height: 8vmin;
+  height: 10vmin;
 }
 
 .calculate {
-  background: chartreuse;
+  background: darkgreen;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.calculate:hover {
+  background-color: rgb(0, 74, 0);
+  color: aquamarine;
+}
+
+.calculate:hover .calculator {
+  fill: aqua;
+  transform: scale(1.2);
 }
 
 .reset {
   background: tomato;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.reset:hover {
+  color: aqua;
+  background-color: rgb(208, 60, 34);
+}
+
+.reset:hover .calculator {
+  fill: aqua;
+  transform: scale(1.2);
+}
+
+.calculator {
+  margin-left: 5vmin;
+  margin-bottom: -1vmin;
+  color: #fff;
+  fill: #fff;
+}
 @keyframes background-animation {
   0% {
     background-position: 0 0;

@@ -1,4 +1,7 @@
 import { Component } from "react";
+import { BiCalculator } from "react-icons/bi";
+import { AiOutlineClear } from "react-icons/ai";
+
 import Result from "../result/Result";
 import s from "./Calculator.module.css";
 
@@ -90,9 +93,11 @@ export default class Calculator extends Component {
           <div className={s.control}>
             <button className={s.calculate} type="submit">
               Обчислити
+              <BiCalculator size="2em" className={s.calculator} />
             </button>
             <button className={s.reset} type="button" onClick={this.reset}>
               Скинути
+              <AiOutlineClear size="2em" className={s.calculator} />
             </button>
           </div>
         </form>
