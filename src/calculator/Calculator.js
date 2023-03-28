@@ -61,7 +61,7 @@ export default class Calculator extends Component {
               type="number"
               name="P"
               required
-              step="0.01"
+              step="0.0000001"
             />
           </label>
 
