@@ -94,11 +94,11 @@ export default class Calculator extends Component {
           <div className={s.control}>
             <button className={s.calculate} type="submit">
               Обчислити
-              <BiCalculator size="2em" className={s.calculator} />
+              <BiCalculator size="1.5em" className={s.calculator} />
             </button>
             <button className={s.reset} type="button" onClick={this.reset}>
               Скинути
-              <AiOutlineClear size="2em" className={s.calculator} />
+              <AiOutlineClear size="1.5em" className={s.calculator} />
             </button>
           </div>
         </form>
